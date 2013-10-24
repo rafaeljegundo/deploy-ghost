@@ -1,0 +1,19 @@
+{
+  "platform": "ubuntu",
+  "user": {
+      "name": "deployer",
+      "password": "YOURPASSWORD"
+    },
+  "build_essential": {
+    "compiletime": false
+  },
+  "nodejs": {
+    "version": "0.10.18",
+    "legacy_packages": false
+    },
+  "nginx": {
+    "install_method": "package"
+    },
+  "server_name": "YOURSERVERIP",
+  "run_list": ["recipe[main]"]
+}
